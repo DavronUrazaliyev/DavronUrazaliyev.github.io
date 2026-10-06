@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davronbek O'razaliyev - Portfolio</title>
+    <style>
+        :root {
+            --bg-main: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #e2e8f0;
+            --accent: #3b82f6;
+            --accent-hover: #60a5fa;
+        }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; padding: 0; 
+            background-color: var(--bg-main); 
+            color: var(--text-main); 
+            line-height: 1.6; 
+        }
+        header { 
+            background: linear-gradient(135deg, #1e293b, #0f172a); 
+            padding: 5rem 2rem; 
+            text-align: center; 
+            border-bottom: 3px solid var(--accent); 
+        }
+        h1 { margin: 0; font-size: 3.5rem; color: #fff; letter-spacing: 1px; }
+        h2 { color: var(--accent); font-size: 1.5rem; margin-top: 0.5rem; font-weight: 400; }
+        .contact-info { margin-top: 1rem; color: #94a3b8; font-size: 1.1rem; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem; }
+        .section { 
+            background: var(--bg-card); 
+            margin-bottom: 2.5rem; 
+            padding: 2.5rem; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.5); 
+        }
+        .section-title { 
+            border-bottom: 2px solid var(--accent); 
+            padding-bottom: 0.8rem; 
+            margin-top: 0; 
+            color: #fff; 
+            font-size: 1.8rem;
+        }
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 1.5rem; 
+            margin-top: 1.5rem;
+        }
+        .card { 
+            background: var(--bg-main); 
+            padding: 1.5rem; 
+            border-radius: 8px; 
+            border-left: 4px solid var(--accent);
+            transition: transform 0.3s ease;
+        }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { margin-top: 0; color: var(--accent-hover); font-size: 1.3rem; }
+        .skills { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+        .skill-tag { 
+            background: rgba(59, 130, 246, 0.2); 
+            color: var(--accent-hover); 
+            padding: 0.4rem 1rem; 
+            border-radius: 20px; 
+            font-size: 0.95rem; 
+            border: 1px solid var(--accent);
+            font-weight: 500;
+        }
+        .achievements-list li { margin-bottom: 1rem; font-size: 1.1rem; }
+        .achievements-list strong { color: var(--accent-hover); }
+        a { color: var(--accent-hover); text-decoration: none; transition: 0.3s; }
+        a:hover { color: #fff; text-decoration: underline; }
+        footer { 
+            text-align: center; 
+            padding: 2rem; 
+            border-top: 1px solid var(--bg-card); 
+            margin-top: 2rem; 
+            color: #94a3b8;
+        }
+        
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+            .section { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Davronbek O'razaliyev</h1>
+        <h2>Harbiy Muhandis | FPV & Sun'iy Intellekt Mutaxassisi</h2>
+        <div class="contact-info">
+            <p>Jizzax, O'zbekiston | <a href="mailto:email@example.com">email@example.com</a> | <a href="https://github.com/SizningLoginingiz" target="_blank">GitHub</a></p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2 class="section-title">Men haqimda</h2>
+            <p>Axborot texnologiyalari va sun'iy intellekt kafedrasi 5-bosqich kursantiman. Avtonom tizimlar, mahalliy AI klasterlarini qurish, 5"-15" ramkalardagi FPV va optik tolali dronlar hamda Unity 3D simulyatsiyalarini ishlab chiqish bo'yicha kuchli amaliy tajribaga egaman. Maqsadim — murakkab harbiy-muhandislik muammolariga innovatsion yechimlar yaratish.</p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Texnik Ko'nikmalar</h2>
+            <div class="skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C# & C</span>
+                <span class="skill-tag">Ollama & Qwen2.5</span>
+                <span class="skill-tag">RAG Tizimlari</span>
+                <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">PostgreSQL & Redis</span>
+                <span class="skill-tag">Unity 3D</span>
+                <span class="skill-tag">ROS</span>
+                <span class="skill-tag">INAV / Betaflight</span>
+                <span class="skill-tag">STM32 / ESP32 / Arduino</span>
+                <span class="skill-tag">MPU-6050/9250 IMU</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Asosiy Loyihalar</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Mahalliy AI Klasteri</h3>
+                    <p>5 ta kompyuterni LAN tarmog'i orqali birlashtirgan oflayn RAG tizimi. Ollama, FastAPI va ma'lumotlar bazalaridan iborat markazlashtirilgan sun'iy intellekt arxitekturasi.</p>
+                </div>
+                <div class="card">
+                    <h3>ZSU 23-2 3D Simulyatori</h3>
+                    <p>Unity 3D dasturida yaratilgan to'liq simulyatsiya. MPU-6050/9250 IMU sensorlari bilan UDP orqali ulangan holda apparat-dasturiy integratsiya qilingan.</p>
+                </div>
+                <div class="card">
+                    <h3>Avtonom FPV & UGV Tizimlari</h3>
+                    <p>Optik tola va WDM transeiverlar orqali boshqariladigan dronlar hamda yerdagi robototexnika (UGV). Radioto'lqinlarsiz uzluksiz aloqa va yuqori xavfsizlik ta'minlangan.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Yutuqlar va Tajriba</h2>
+            <ul class="achievements-list">
+                <li>Mudofaa vazirligi miqyosidagi FPV dron poygalarida <strong>3-o'rin</strong> sohibi.</li>
+                <li>Institut miqyosidagi FPV musobaqalarida <strong>2-o'rin</strong> sohibi.</li>
+                <li>SIM800C, barometrik datchiklar va mikrokontrollerlar asosida harakatni aniqlovchi va SMS xabar yuboruvchi mustaqil tizimlarni ishlab chiqish.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 Davronbek O'razaliyev. Barcha huquqlar himoyalangan.</p>
+    </footer>
+</body>
+</html>
